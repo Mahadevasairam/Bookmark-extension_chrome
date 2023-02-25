@@ -53,18 +53,18 @@ function render(name, website) {
                     ${name[i]}
                 </a>
             </li>
-            <button class ="delete-url" id="${i}" onclick="deleteUrl(this.id)">❌</button>
             </div>
         `
     }
     ulEl.innerHTML = listItems
 }
 
-function deleteUrl(id) {
-    myURL.splice(id, 1)
-    myTitles.splice(id, 1)
-    localStorage.setItem("myTitles", JSON.stringify(myTitles))
-    localStorage.setItem("myURL", JSON.stringify(myURL))
-    render(myTitles, myURL)
-}
-
+// function deleteUrl(id) {
+//     console.log("hello clicked")
+//     myURL.splice(id, 1)
+//     myTitles.splice(id, 1)
+//     localStorage.setItem("myTitles", JSON.stringify(myTitles))
+//     localStorage.setItem("myURL", JSON.stringify(myURL))
+//     render(myTitles, myURL)
+// }
+//<button class ="delete-url" id="${i}" onclick="deleteUrl(this.id)">DELETE</button>
